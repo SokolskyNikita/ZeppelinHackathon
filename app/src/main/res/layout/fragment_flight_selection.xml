@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#0d1f30"
+    android:layout_height="match_parent"
+    tools:context="aviation.recoding.zeppelin.ui.flights.FlightSelectionFragment">
+
+
+    <FrameLayout
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/searchViewTop"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/skipButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:textAlignment="center"
+        android:layout_marginTop="8dp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Skip >" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/flightList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp" />
+
+</LinearLayout>

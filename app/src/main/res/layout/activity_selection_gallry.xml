@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="aviation.recoding.zeppelin.ui.flights.SelectionGallery">
+
+
+    <ImageView
+        android:id="@+id/top_bar"
+        android:src="@drawable/top_bar"
+        android:scaleType="fitCenter"
+        android:background="#00a1a3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <com.gjiazhe.panoramaimageview.PanoramaImageView
+        android:layout_below="@+id/top_bar"
+        android:id="@+id/backgroundImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/wide_back"
+        app:piv_enablePanoramaMode="true"
+        app:piv_invertScrollDirection="false"
+        app:piv_show_scrollbar="false" />
+
+
+</RelativeLayout>

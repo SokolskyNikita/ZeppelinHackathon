@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="aviation.recoding.zeppelin.ui.scanning.ScanFragment">
+
+
+    <aviation.recoding.zeppelin.vision.camera.CameraSourcePreview
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <aviation.recoding.zeppelin.vision.camera.GraphicOverlay
+            android:id="@+id/infoOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </aviation.recoding.zeppelin.vision.camera.CameraSourcePreview>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:background="#0d1f30"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_height="80dp">
+
+
+        <Button
+            android:id="@+id/btnFlight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.5"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:text="Select your flight" />
+
+        <Button
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.5"
+            android:id="@+id/button4"
+            android:background="@android:color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Import Boarding Pass" />
+
+    </LinearLayout>
+</RelativeLayout>

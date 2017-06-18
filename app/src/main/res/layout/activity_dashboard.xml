@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="#994FFF"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="14dp"
+                android:layout_weight="0.5"
+                android:background="#0d1f30"
+                android:onClick="goToFlightScan"
+                android:padding="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fly_icon" />
+
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="14dp"
+                android:layout_weight="0.5"
+                android:background="#db6c0f"
+                android:onClick="goToLeaderboard"
+                android:padding="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/leader_icon" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="14dp"
+                android:layout_weight="0.5"
+                android:background="#f0e3c0"
+                android:onClick="goToReceiptScan"
+                android:padding="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/zap_icon" />
+
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="14dp"
+                android:layout_weight="0.5"
+                android:background="#3b6670"
+                android:onClick="goToGame"
+                android:padding="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/badge_icon" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
